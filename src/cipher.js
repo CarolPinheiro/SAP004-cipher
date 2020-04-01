@@ -19,11 +19,15 @@ const cipher = {
              num = encodeString.charCodeAt(0);
              resultCipher += String.fromCharCode(num);
          }
+         else {
+          num = encodeString.charCodeAt(0);
+          resultCipher += String.fromCharCode(num);
+         }
     }
     return resultCipher;
   },
 
-  decode: function decode(offset,string) {
+  decode: function (offset,string) {
     let resultDecipher = "";
 
     if (typeof string !== "string") {
@@ -44,6 +48,10 @@ const cipher = {
          else if(decodeString.charCodeAt(0) === 32) {
                  num = decodeString.charCodeAt(0);
              resultDecipher += String.fromCharCode(num);
+         }
+         else {
+          num = decodeString.charCodeAt(0);
+          resultDecipher += String.fromCharCode(num);
          }
          
     }
