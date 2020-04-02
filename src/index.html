@@ -9,25 +9,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   </head>
   <body>
-    <header id="title">
-      <nav>Mensagens Secretas</nav>
-    </header>
-    <form id="data-form">
-      <section class="center">
-      <label>
-        Digite a mensagem secreta que pretende enviar: 
-        <input type="text" id="data-input" placeholder="Digite aqui seu texto a ser codificado ou decodificado" required> 
-      </label>
-      <label>
-        Escolha o Offset da codificação:
-        <input type="number" id="offset"  required> 
-      </label>
-      <button type="submit" id="encode" class="button"><span>Codificar</span></button>
-      <button type="submit" id="decode" class="button"><span>Decodificar</span></button>
+    <h1 id="title">Mensagens Secretas</h1>
+    <main class="center">
+      <label class="label-text" class="block"> Digite a mensagem secreta que pretende enviar: </label>
+        <input type="text" id="data-input" placeholder="Digite aqui seu texto a ser codificado ou decodificado" required class="block input"> 
+      <label class="label-text"> Escolha o Offset da codificação: </label> <input type="number" id="offset"  required class="block input"> 
+      <button type="submit" id="encode" class="button">Codificar</button>
+      <button type="submit" id="decode" class="button">Decodificar</button>
       <button type="reset" id="botao-limpar"> Limpar</button>
-        <h2 id="results" ></h2>
-      </section>
-    </form>
+        <h2 id="results" class="block" ></h2>
+    </main>
     <script src="index.js" type="module"></script> 
   </body>
 </html>

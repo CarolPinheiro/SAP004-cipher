@@ -9,23 +9,16 @@ body {
 #title {
     font-family: 'Lobster', sans-serif;
     font-size: 80px;
-    padding: 20px 0 40px;
+    padding: 10px 0 25px;
     text-align: center;
     color: white;
     font-weight: bold;
 }
 
-#data-form {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center; 
-}
-
 input {
     border: 1px solid black;
     border-radius: 20px;
+    margin: 30px 0;
 }
 
 .center {
@@ -33,21 +26,34 @@ input {
     text-align: center;
     margin: 0 auto;
     padding: auto 50px;
-    height: 300px;
+    height: 350px;
     border: 2px black solid;
     border-radius: 50px;
-    display: inline-block;
     background-color: #FEFEFE;
     font-family: 'Gotu', sans-serif;
     box-shadow: 5px 5px 5px black;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
 }
 
+.block {
+    display: block;
+}
+
+.label-text {
+    font-size: 25px;
+}
 #data-input {
     width: 325px;
 }
 
 #offset {
     width: 60px;
+}
+
+.input {
+    margin: 25px auto;
 }
 
 .button {
@@ -61,19 +67,16 @@ input {
 
 .button:hover {
     cursor: pointer;
-}
-
-.button:hover span{
     padding-right: 13px;
     transition: 1000ms;
 }
 
-button:hover span:after{
+.button:after{
     content: '\00bb';
     padding-left: 5px;
 }
 
-button:active {
+.button:active {
     transform: scale(1.1);
 }
 
