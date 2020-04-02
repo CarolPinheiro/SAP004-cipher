@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
@@ -13,20 +14,20 @@
       <nav>Mensagens Secretas</nav>
     </header>
     <form id="data-form">
-      <div class="center">
+      <section class="center">
       <label>
         <h2>Digite a mensagem secreta que pretende enviar: </h2>
         <input type="text" id="data-input" placeholder="Digite aqui seu texto a ser codificado ou decodificado" required> 
       </label>
       <label class="inline">
         <h2>Escolha o Offset da codificação: </h2>
-        <input type="number" id="offset" required> 
+        <input type="number" id="offset"  required> 
       </label>
       <button type="submit" id="encode" class="button"><span>Codificar</span></button>
       <button type="submit" id="decode" class="button"><span>Decodificar</span></button>
-
-      <h2 id="results"></h2>
-      </div>
+      <button type="reset" id="botao-limpar"> Limpar</button>
+        <h2 id="results" ></h2>
+      </section>
     </form>
     <script src="index.js" type="module"></script> 
   </body>
