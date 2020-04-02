@@ -9,7 +9,7 @@ body {
 #title {
     font-family: 'Lobster', sans-serif;
     font-size: 80px;
-    padding: 10px 0 25px;
+    padding: 5px 0 15px;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -43,6 +43,8 @@ input {
 
 .label-text {
     font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
 }
 #data-input {
     width: 325px;
