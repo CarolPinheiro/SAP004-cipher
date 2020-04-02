@@ -17,3 +17,5 @@ decodeButton.addEventListener("click", function(event) {
     let offsetInput = document.getElementById("offset").value;
     document.getElementById("results").innerText = cipher.decode(offsetInput,dataInput)
 })
+
+
