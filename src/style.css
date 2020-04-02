@@ -23,8 +23,13 @@ body {
     align-items: center; 
 }
 
+input {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
 .center {
-    width: 50%;
+    width: 60%;
     text-align: center;
     margin: 0 auto;
     padding: auto 50px;
@@ -51,6 +56,7 @@ body {
     font-weight: bold;
     margin: 0 9px;
     border-radius: 5px;
+    border-color:purple;
 }
 
 .button:hover {
@@ -70,3 +76,16 @@ button:hover span:after{
 button:active {
     transform: scale(1.1);
 }
+
+#botao-limpar {
+    height: 25px;
+    width: 70px;
+    border-radius: 15px;
+    border-color: red;
+}
+
+#botao-limpar:hover {
+    background-color: rgb(223, 30, 30);
+    color: white;
+}
+
