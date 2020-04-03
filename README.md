@@ -16,6 +16,3 @@ Voltado para que as pessoas que desejam estabelecer um nível de segurança, ao 
 Com base em um offset previamente definido (número de casas que o código irá se deslocar no alfabeto em relação a letra original), criar a possibilidade de encriptação e decriptação das mensagens trocadas.
 O programa se permite resolver os problemas de seus usuários, ao permitir com uma interface simples e intuitiva, que todos consigam utilizar de suas funcionalidades sem maiores problemas.
 
-O que fazer quando baixar o repositório?
-Primeiro, se certifique que o repositório foi clonado corretamete para sua máquina.
-
