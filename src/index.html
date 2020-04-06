@@ -11,13 +11,15 @@
   <body>
     <h1 id="title">Mensagens Secretas</h1>
     <main class="center">
+      <form>
       <label class="label-text block" > Digite a mensagem secreta que pretende enviar: </label>
         <input type="text" id="data-input" placeholder="Digite aqui seu texto a ser codificado ou decodificado" required class="block input"> 
       <label class="label-text"> Escolha o Offset da codificação: </label> <input type="number" id="offset"  required class="block input"> 
       <button type="submit" id="encode" class="button">Codificar</button>
       <button type="submit" id="decode" class="button">Decodificar</button>
-      <button type="reset" id="botao-limpar"> Limpar</button>
+      <button type="reset" id="clean-button"> Limpar</button>
         <h2 id="results" class="block" ></h2>
+        </form>
     </main>
     <script src="index.js" type="module"></script> 
   </body>
