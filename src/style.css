@@ -9,16 +9,16 @@ body {
 #title {
     font-family: 'Lobster', sans-serif;
     font-size: 80px;
-    padding: 5px 0 15px;
+    padding: 5px 0 0;
     text-align: center;
     color: white;
     font-weight: bold;
 }
 
-input {
+.input {
     border: 1px solid black;
     border-radius: 20px;
-    margin: 30px 0;
+    margin: 25px auto;
 }
 
 .center {
@@ -52,10 +52,6 @@ input {
 
 #offset {
     width: 60px;
-}
-
-.input {
-    margin: 25px auto;
 }
 
 .button {

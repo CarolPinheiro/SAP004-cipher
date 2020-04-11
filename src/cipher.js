@@ -6,23 +6,18 @@ const cipher = {
      }
 
     for (var i=0; i<string.length;i++) {
-        let encodeString = string[i];
+        let encodeString = string.charCodeAt(i);
         let num;
-         if (encodeString.charCodeAt(0)>=65 && (encodeString.charCodeAt(0) <=90)) {
-              num = encodeString.charCodeAt(0)-65;
+         if (encodeString>=65 && (encodeString<=90)) {
+              num = encodeString-65;
              resultCipher += String.fromCharCode(((num+offset)%26) + 65);
          }
-         else if  (encodeString.charCodeAt(0)>=97 && (encodeString.charCodeAt(0) <=122)) {
-             num = encodeString.charCodeAt(0)-97;
+         else if  (encodeString>=97 && (encodeString <=122)) {
+             num = encodeString-97;
             resultCipher += String.fromCharCode(((num+offset)%26) + 97);
          }
-         else if(encodeString.charCodeAt(0) === 32) {
-             num = encodeString.charCodeAt(0);
-             resultCipher += String.fromCharCode(num);
-         }
          else {
-          num = encodeString.charCodeAt(0);
-          resultCipher += String.fromCharCode(num);
+          resultCipher += String.fromCharCode(encodeString);
          }
     }
     return resultCipher;
@@ -35,23 +30,18 @@ const cipher = {
      }
 
     for (var i=0; i<string.length;i++) {
-        let decodeString = string[i];
+        let decodeString = string.charCodeAt(i);
         let num;
-         if (decodeString.charCodeAt(0)>=65 && (decodeString.charCodeAt(0) <=90)) {
-             num = decodeString.charCodeAt(0)-65;
+         if (decodeString>=65 && (decodeString<=90)) {
+             num = decodeString-65;
              resultDecipher += String.fromCharCode((num+(26-offset%26))%26 + 65);
          }
-         else if  (decodeString.charCodeAt(0)>=97 && (decodeString.charCodeAt(0) <=122)) {
-                 num = decodeString.charCodeAt(0)-97;
+         else if  (decodeString>=97 && (decodeString<=122)) {
+                 num = decodeString-97;
             resultDecipher += String.fromCharCode((num+(26-offset%26))%26 + 97);
          }
-         else if(decodeString.charCodeAt(0) === 32) {
-                 num = decodeString.charCodeAt(0);
-             resultDecipher += String.fromCharCode(num);
-         }
          else {
-          num = decodeString.charCodeAt(0);
-          resultDecipher += String.fromCharCode(num);
+          resultDecipher += String.fromCharCode(decodeString);
          }
          
     }
