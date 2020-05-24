@@ -16,5 +16,5 @@ export const encodeAndDecode = (offset, string) => {
 
 const  cipher = (letterCharCode, value, offset) => {
   let num = letterCharCode - value;
-  return String.fromCharCode((num + offset) % 26 + value);
+  return String.fromCharCode((num + (offset%26)) % 26 + value);
 }
